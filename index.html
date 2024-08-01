@@ -1,1 +1,77 @@
 Hello World
+
+https://typst.app/project/rSb46C9jCj_xXxGRwLvp6d
+
+#set text(lang: "zh",region: "zh", font:"Noto Sans Caucasian Albanian")
+
+#show link: underline
+
+// The size of text. The recommend resume text size is from `10pt` to `12pt`
+#set text(size: 11pt,)
+
+// Feel free to change the margin below to best fit your own CV
+#set page(margin: (x: 0.9cm, y: 1.3cm),)
+
+// For more customizable options, please refer to official reference: https://typst.app/docs/reference/
+#set par(justify: true)
+
+#let chiline() = {v(-3pt); line(length: 100%); v(-5pt)}
+
+= 刘紫贤
+
+(+86) 173-4201-6695 | hdu_sdlzx@163.com
+
+== 教育经历
+#chiline()
+
+*浙江大学* #h(1fr) 2017/9 -- 2020/3 \
+计算机科学与技术 #h(1fr) 硕士 \
+华为软件精英挑战赛杭夏赛区4强 \
+*杭州电子科技大学* #h(1fr) 2013/9 -- 2017/9\
+计算机科学与技术 #h(1fr) 本科 \
+2014年ACM-ICPC亚洲区域赛西安站银奖 \
+
+== 工作经历
+#chiline()
+
+*华为智能车解决方案BU* #h(1fr) 2023/4 -- 2024/6 \
+C++ #h(1fr) 软件开发工程师 \
+- 业务逻辑开发
+  - 完成摄像头故障监控模块代码，实现硬件故障的监控、确认、防抖、上报等功能。
+  - 完成显示输出模块代码，实现图像处理、输出等功能，支持动态配置不同显示设备与处理流程。
+- 传感器功能开发
+  - 完成摄像头状态查询功能
+  - 完成摄像头OTP数据读取功能
+- 其他
+  - 负责历史代码的编码规范（AUTOSAR C++ 14）整改
+  - 作为项目组DT测试接口人负责搭建DT框架、在组内推广单元测试
+  - 协助测试同事进行测试桩开发
+
+*华为2012实验室* #h(1fr) 2020/7 -- 2023/4 \
+C、Linux #h(1fr) 操作系统开发工程师 \
+- 负责Linux内存管理子系统功能增强：
+  - 实现代码段大页内存功能：\
+    新增hugtlbfs文件映射功能，ELF启动流程、glibc加载动态库流程使用hugetlbfs文件映射。
+  - 实现tmpfs透明大页缓存功能：\
+    新增tmpfs透明大页池，修改内存释放流程，将释放的内存放入池中。
+  - 实现OS启动阶段内存预留：\
+    根据BIOS上报的内存类型，定制内存管理相关启动流程。
+- 负责计算领域相关专项工作
+  - 下一代操作系统预研项目中实现openEuler异构内存管理框架的昇腾NPU驱动
+    （#link("https://docs.openeuler.org/zh/docs/24.03_LTS/docs/GMEM/认识GMEM.html")[GMEM]） \
+    实现统一地址空间的异构内存缺页中断、申请释放等基础功能，搭建开发与端到端测试环境、修改驱动代码
+  - 软件性能倍增项目中实现openEuler性能优化软件的动态库合并功能
+    （#link("https://docs.openeuler.org/zh/docs/24.03_LTS/docs/sysBoost/认识sysBoost.html")[sysboost]） \
+    实现一个简易链接器，根据ELF格式将多个so合并为一个
+  - 开源软件自维护项目中负责boost开源库：根据业务需求对boost进行编译裁剪、测试补充等工作
+- 其他
+  - 操作版本维护工作，包括软件更新、差异分析、定制编译、安全漏洞分析、补丁分析、bugfix推送社区等。
+  - 2022年度华为软件Hackathon大赛决赛三等奖
+
+== 技能
+#chiline()
+
+- *编程语言与计算机系统*： 熟悉C++、操作系统原理、常用数据结构
+- *开源软件*： 熟悉#link("https://www.kernel.org/")[Linux内核]，能够理解部源码并做一定程度的修改。
+- *软件开发*： 使用过git、gtest、asan、gdb、perf等代码开发工具。
+- *英语能力*： 英语六级

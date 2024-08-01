@@ -1,0 +1,4 @@
+baseURL = 'https://hdu-sdlzx.github.io/'
+languageCode = 'zh-cn'
+title = 'Liu Zixian Hugo Site'
+theme = 'PaperMod'
